@@ -1,0 +1,107 @@
+body {
+    font-family: 'Bebas Neue', sans-serif;
+    max-width: 1280px;
+    margin: 0 auto;
+    background-image: url('../imagens/wallpaper.png');
+  }
+  
+body.modo-escuro{
+     background-image: url('../imagens/dark.png');
+}
+header{
+ 
+    display: flex;
+    justify-content: space-between;
+    padding: 60px;
+}
+header .logo,
+header .imagem-botao{
+    width: 50px;
+    transition: 0.2s ease-in-out;
+}
+
+
+header #botao-alterar-tema{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+header .logo:hover,
+header .imagem-botao:hover,
+main .cartao-jojo:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+main{
+    background-color: rgba(255, 255, 255, 0.603);
+    padding: 25px;
+    border-radius: 15px;
+}
+main .listagem-jojo{
+   display: flex;
+   gap: 30px;
+   justify-content: center;
+   
+    
+}
+
+main .cartao-jojo{
+    background-color: rgba(253, 253, 253, 0.729);
+    width: 200px;
+    padding: 15px;
+    border-radius: 15px;
+    transition: 0.2s ease-in-out;
+    
+}
+main .cartao-jojo:hover{
+    background-color: #4a464ed2;
+}
+
+.modo-escuro .cartao-hover{
+    background-color: #5c555586;
+}
+main .cartao-jojo .informacoes{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #000000;
+    border-radius: 10px;
+}
+main .cartao-jojo .informacoes span{
+    background-color: rgba(194, 190, 190, 0);
+    padding: 5px;
+    border-radius: 10px;
+    
+}
+
+main .cartao-jojo .tipos{
+    display: flex;
+    gap: 15px;
+    justify-content: space-between;
+}
+
+main.cartao-jojo .tipo{
+    padding: 8px;
+    border-radius: 10px;
+     justify-content: space-between;
+}
+.raça{
+    background-color: hsl(293, 67%, 98%);
+    justify-content: space-between;
+
+}
+.stand{
+    background-color: rgb(241, 238, 238);
+    justify-content: space-between;
+    
+}
+.descricao {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: rgba(73, 68, 68, 0.912);
+    justify-content: space-between;
+    font-family: Helvetica;
+    color: #FFF;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #000;
+}
